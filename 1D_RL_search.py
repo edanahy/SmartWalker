@@ -136,6 +136,7 @@ async def debounce_button(target_button, delay_ms=500):
     await runloop.sleep_ms(delay_ms)
 
 async def main_loop():
+    global EPISODES, debounce_button, env, TIMESTEPS, agent, rewards_history, timesteps
     print("Starting main loop...")
 
     print("Place the LEGO bricks in the desired arc, starting and stopping with black bricks as boundaries.")
